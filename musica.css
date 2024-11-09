@@ -1,0 +1,19 @@
+/* Estilo para el reproductor de Spotify */
+#spotify-player {
+    position: fixed;
+    bottom: 20px;  /* Ubicado en la parte inferior */
+    left: 20px;    /* A la izquierda */
+    width: 300px;  /* Tamaño razonable */
+    height: 80px;  /* Tamaño razonable */
+    border-radius: 12px;
+    z-index: 9999;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 600px) {
+    #spotify-player {
+        width: 250px;  /* Reducido en móviles */
+        height: 60px;  /* Reducido en móviles */
+        left: 10px;    /* Ajuste para pantallas pequeñas */
+    }
+}

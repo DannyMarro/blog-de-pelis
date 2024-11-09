@@ -43,6 +43,17 @@
             border: none;
             border-radius: 8px;
         }
+
+        /* Estilo para el reproductor de Spotify */
+        #spotify-player {
+            position: fixed;
+            bottom: 20px;  /* Ubicado en la parte inferior */
+            left: 20px;    /* A la izquierda */
+            width: 300px;  /* Tamaño razonable */
+            height: 80px;  /* Tamaño razonable */
+            border-radius: 12px;
+            z-index: 9999;
+        }
     </style>
 </head>
 <body>
@@ -112,6 +123,11 @@
         </div>
     </div>
 
+    <!-- Reproductor de Spotify -->
+    <iframe id="spotify-player" src="https://open.spotify.com/embed/track/3o31P310cbEcnnGpxMHh2B?utm_source=generator" 
+            width="300" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy"></iframe>
+
     <script>
         function openTrailer(videoUrl) {
             const trailerFrame = document.getElementById("trailer");
@@ -135,10 +151,3 @@
     </script>
 </body>
 </html>
-
-
-
-    <script src="script.js"></script>
-</body>
-</html>
-
